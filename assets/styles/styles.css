@@ -11,13 +11,14 @@ body {
 
 .navBar {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     padding: 10px;
     overflow: hidden;
 }
 
 .pagesBar {
+    width: 25%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,34 +34,91 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 12px;
 }
 
 .pagesBar a:hover {
     background-color: #111;
-}
-.pagesBar a:active {
-    background-color: #cc0303;
+    box-shadow: 0px 0px 15px #111;
 }
 
-.navBar .image {
+.pagesBar a:active {
+    background-color: #cc0303;
+    box-shadow: 0px 0px 15px #cc0303;
+}
+
+.navBar .logoConteiner {
     display: flex;
     width: 25%;
     justify-content: center;
 }
 
-.navBar img {
+.logoConteiner .image {
     height: 70px;
-    transition: transform  0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .navBar .image:hover {
     transform: scale(1.05);
 }
 
-.searchBarConteiner {
-    width: 25%;
+/*.searchBarConteiner {
+width: 25%;
 }
 
 .searchBar {
+float: right;
+}*/
+
+.singBarConteiner {
+    width: 25%;
+}
+
+.singBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     float: right;
+}
+
+.singBar a {
+    color: white;
+    text-decoration: none;
+}
+
+.singBar li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    border-radius: 12px;
+}
+
+.singInBar {
+    color: white;
+}
+
+.singBar li:hover {
+    background-color: #111;
+    box-shadow: 0px 0px 15px #111;
+}
+
+.singBar li:active {
+    background-color: #cc0303;
+    box-shadow: 0px 0px 15px #cc0303;
+}
+
+.dropdownConteiner .image {
+    height: 35px;
+    float: left;
+}
+
+.dropdownConteiner {
+    display: block;
+    color: white;
+    padding: auto;
+    margin: auto;
+    border-radius: 0% 0% 12px 12px;
 }
