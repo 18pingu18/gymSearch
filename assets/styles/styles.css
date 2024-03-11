@@ -1,0 +1,66 @@
+body {
+    background-color: #585858;
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.pagesBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagesBar li {
+    float: left;
+}
+
+.pagesBar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.pagesBar a:hover {
+    background-color: #111;
+}
+.pagesBar a:active {
+    background-color: #cc0303;
+}
+
+.navBar .image {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.navBar img {
+    height: 70px;
+    transition: transform  0.3s ease;
+}
+
+.navBar .image:hover {
+    transform: scale(1.05);
+}
+
+.searchBarConteiner {
+    width: 25%;
+}
+
+.searchBar {
+    float: right;
+}
